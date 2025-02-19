@@ -1,0 +1,45 @@
+1) Pandas - analyzing, cleaning and manuplating data
+
+2) df = read_csv('file.csv')
+
+3) df.to_string() - for entire data 
+
+4) df.dropna(inplace = True) - drop entire row having null value 
+
+5) df.fillna(value,inplace=True) - fill null value 
+df["Calories"].fillna(130, inplace = True) - fill null values of selected columns
+
+6) df['Date'] = pd.to_datetime(df['Date']) - correct datatype
+
+7) #Replacing wrong values
+for x in df.index:
+  if df.loc[x, "Duration"] > 120:
+    df.drop(x, inplace = True)
+	
+8) df.drop_duplicates(inplace = True) - remove duplicate
+
+9) pandas.concat([Dataframe1,Dataframe2])
+
+10) DataFrameName.insert(col_index, col_name, value)
+
+11) DataFrame.drop(['Column_Name'], axis=1)
+
+12) DataFrame.select_dtypes(include=['object','float'], exclude =['int'])
+
+13) aggregation = df.agg({'Data_Points':['min','max','sum'], 'Data_value':['count']})
+
+14) import pandas as pd
+
+df1 = pd.DataFrame({'id': [1, 2, 3], 'name': ['Alice', 'Bob', 'Charlie']})
+df2 = pd.DataFrame({'id': [2, 3, 4], 'age': [25, 30, 35]})
+
+result = pd.merge(df1, df2, on='id', how='inner')
+
+result_1 = pd.concat([df1, df2], axis=0, ignore_index=True)
+
+15) df.pivot_table(values='Value', index='Category', columns='Type', aggfunc='sum')
+
+16) df.groupby('Category').sum()
+
+
+

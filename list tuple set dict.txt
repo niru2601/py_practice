@@ -1,0 +1,11 @@
+
+List - ordered, allows duplicate, mutable, []
+
+Tuple - ordered, allows duplicate, immutable, ()
+
+Set - unordered, no duplicate, mutable, {}, set()
+
+dict - unordered, no duplicate key, mutable, {key:value}
+
+
+ 
