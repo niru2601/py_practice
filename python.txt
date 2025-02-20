@@ -1,0 +1,78 @@
+Genrator -
+yield - The yield keyword is used to return a list of values from a function.
+	  -	Unlike the return keyword which stops further execution of the function, the yield keyword continues to the end of the function.
+
+decorators - In Python, decorators are a powerful and flexible way to modify or extend the behavior of functions or methods,
+			without changing their actual code
+
+  
+constructor - 
+In Python, a constructor is a special method that is called automatically when an object is created from a class.
+	__new__: Creates a new instance of a class.
+	__init__: Initializes the created instance.
+	Type : 1) default constructor - 
+				class Car:
+					def __init__(self):
+						#Initialize the Car with default attributes
+						self.make = "Toyota"
+						self.model = "Corolla"
+						self.year = 2020
+						
+				# Creating an instance using the default constructor
+				car = Car()
+				print(car.make)
+				print(car.model)
+				print(car.year)
+				
+		   2) parameterized constructor -
+				class Car:
+					def __init__(self, make, model, year):
+						#Initialize the Car with specific attributes.
+						self.make = make
+						self.model = model
+						self.year = year
+
+				# Creating an instance using the parameterized constructor
+				car = Car("Honda", "Civic", 2022)
+				print(car.make)
+				print(car.model)
+				print(car.year)
+				
+				
+diffrence -		python 2                         	python 3
+
+release date 	2000								3000
+
+Syntax			complex and difficult 				easy and readable
+
+Performance		slow due to design					improved compared to python 2
+
+print 			print as statement 					print as function 
+				print 'name'						print(name)
+				
+integer division 5/2 = 2							5/2 = 2.5
+
+value store 	ascii								unicode
+
+range 			xrange()							range() more efficiant 
+
+
+diff in set and frozen set : 
+
+	both are same just frozen set is immutable. you can not add or remove the values
+
+super(): 
+		When you use super(), you're referring to the parent class, and you can call methods or access attributes of that class.
+		The advantage of using super() is that you don’t have to explicitly reference the parent class by name.
+		
+reseved keyword : total 36
+		if elif else try except finally break pass continue from for while class is not global def return import yeild
+		
+		
+lambda - 
+
+
+regex - 
+		
+
+		

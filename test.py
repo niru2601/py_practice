@@ -1,11 +1,18 @@
-import pandas as pd
+def check(vowel):
+    count = 0
+    pqr = []
+    abc = "niranjan"
+    for i in range(len(vowel)):
+        for j in abc:
+            if vowel[i] == j:
+                count += 1
+                pqr.append(j)
+    yield pqr
+    yield count
 
-data = {'names':['Boston Celtics', 'Amir Johnson', 'R.J. Hunter','ketan','niranjan'],
-        'age':[10,20,10,20,10]}
-# Making data frame from the csv file
-df = pd.DataFrame(data)
+vowel = "aeiou"
+result = check(vowel)
 
-df1 = df['names'].replace(['Boston Celtics', 'Amir Johnson', 'R.J. Hunter'],
-                 ['Omega Warriors', 'Mitcell Johnson', 'Shivang Thomas'])
-print(df)
-print(df1)
+# To print the result, you need to iterate over the generator:
+for item in result:
+    print(item)
