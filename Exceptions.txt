@@ -1,0 +1,48 @@
+Exception – The base class for all built-in exceptions in Python.
+
+ArithmeticError – A base class for errors related to arithmetic operations.
+
+ZeroDivisionError – Raised when dividing by zero.
+OverflowError – Raised when the result of an arithmetic operation is too large to be represented.
+FloatingPointError – Raised when a floating-point operation fails.
+AssertionError – Raised when an assert statement fails.
+
+AttributeError – Raised when an invalid attribute reference or assignment is made.
+
+IndexError – Raised when trying to access an index that is out of range in a sequence (e.g., a list).
+
+KeyError – Raised when trying to access a dictionary key that doesn’t exist.
+
+MemoryError – Raised when the system runs out of memory.
+
+NameError – Raised when a local or global name is not found.
+
+OSError – A base class for errors related to the operating system.
+
+FileNotFoundError – Raised when trying to access a file that doesn’t exist.
+PermissionError – Raised when trying to access a file or resource without sufficient permissions.
+TypeError – Raised when an operation or function is applied to an object of inappropriate type.
+
+ValueError – Raised when a function receives an argument of the right type but inappropriate value.
+
+StopIteration – Raised by the next() function when there are no more items in an iterator.
+
+RuntimeError – A generic error raised when an unexpected issue occurs during the program’s execution.
+
+ImportError – Raised when an import statement fails to find a module.
+
+ModuleNotFoundError – Raised when a module cannot be found.
+FileExistsError – Raised when trying to create a file or directory that already exists.
+
+TypeError – Raised when an operation or function is applied to an object of inappropriate type.
+
+KeyboardInterrupt – Raised when the user interrupts program execution, usually by pressing Ctrl+C.
+
+NotImplementedError – Raised when an abstract method requires implementation in a subclass.
+
+RecursionError – Raised when the maximum recursion depth is exceeded.
+
+SyntaxError – Raised when the Python interpreter encounters a syntax error.
+
+IndentationError – A subclass of SyntaxError, raised when there’s an error in indentation.
+TimeoutError – Raised when a timeout occurs in a system operation.
