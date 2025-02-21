@@ -51,21 +51,27 @@ import re
 
 
 
-#Email validation 
+# #Email validation 
 
-import re
+# import re
 
-def email():
-    N = int(input())
+# def email():
+#     N = int(input())
     
-    mail = []
-    for i in range(0, N):
-        z = input()
-        mail.append(z)
+#     mail = []
+#     for i in range(0, N):
+#         z = input()
+#         mail.append(z)
     
-    pattern = r"^[a-zA-Z0-9-_]+@[A-Za-z0-9]+\.[A-Za-z]{2,3}$"
-    new_mail = list(filter(lambda x : re.match(pattern,x),mail))
-    print(sorted(new_mail))
-    
+#     pattern = r"^[a-zA-Z0-9-_]+@[A-Za-z0-9]+\.[A-Za-z]{2,3}$"
+#     new_mail = list(filter(lambda x : re.match(pattern,x),mail))
+#     print(sorted(new_mail))
+
         
-email()    
+# email()    
+
+
+z1 = re.findall("[aeiou]","hi, i am niranjan patil",re.IGNORECASE)
+print(z1)
+
+print(len(z1))
